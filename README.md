@@ -6,6 +6,9 @@ Expected Output: "{toppings: "olives", size: "large", price: 10}
 
 Describe: calculatePizzaCost();
 
+Test: "It should return a price for a personal size cheese pizza"
+Code: let myPizza = new Pizza("cheese", "personal");
+
 Test: "It should return a price for large size cheese pizza"
 Code: let myPizza = new Pizza("cheese", "large");
 myPizza.calculatePizzaCost();
