@@ -17,3 +17,16 @@ Pizza.prototype.calculatePizzaCost = function() {
   }
 }
 
+$(document).ready(function() {
+  $("form").submit(function(event) {
+  event.preventDefault();
+  const inputTopping = $("#toppings").val();
+  const inputSize = $("#size").val();
+
+  let myPizza = new Pizza(inputTopping, inputSize);
+  myPizza.calculatePizzaCost();
+
+
+  })
+})
+
