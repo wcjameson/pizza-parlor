@@ -7,10 +7,13 @@ function Pizza(toppings, size) {
 Pizza.prototype.calculatePizzaCost = function() {
   // let price = 10;
   if (this.toppings === "cheese" && this.size === "large") {
-    this.price += 2;
-    console.log("your pizza is " + this.price);
+     return this.price += 2;
   } else if (this.toppings === "olive" || this.toppings === "artichoke" && this.size ==="large") {
-    this.price += 4;
-  } 
+    return this.price += 4;
+  } else if (this.toppings === "olive" || this.toppings === "artichoke" && this.size ==="personal") {
+    return this.price += 2;
+  } else {
+    return this.price;
+  }
 }
 
