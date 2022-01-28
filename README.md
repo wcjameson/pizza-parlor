@@ -8,6 +8,8 @@ Describe: calculatePizzaCost();
 
 Test: "It should return a price for a personal size cheese pizza"
 Code: let myPizza = new Pizza("cheese", "personal");
+myPizza.calculatePizzaCost();
+Expected Output: 10
 
 Test: "It should return a price for large size cheese pizza"
 Code: let myPizza = new Pizza("cheese", "large");
