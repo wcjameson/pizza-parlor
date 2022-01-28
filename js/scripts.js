@@ -8,12 +8,16 @@ Pizza.prototype.calculatePizzaCost = function() {
   // let price = 10;
   if (this.toppings === "cheese" && this.size === "large") {
      return this.price += 2;
-  } else if (this.toppings === "olive" || this.toppings === "artichoke" && this.size ==="large") {
-    return this.price += 4;
-  } else if (this.toppings === "olive" || this.toppings === "artichoke" && this.size ==="personal") {
-    return this.price += 2;
-  } else {
-    return this.price;
+    } else if (this.toppings === "artichoke" && this.size ==="personal") {
+      return this.price += 2;
+    } else if (this.toppings === "artichoke" && this.size ==="large") {
+      return this.price += 4;
+    } else if (this.toppings === "olive" && this.size ==="personal") {
+      return this.price += 2;
+    } else if (this.toppings === "olive" && this.size ==="large") {
+      return this.price += 4;
+    } else {
+      return this.price;
   }
 }
 
@@ -26,7 +30,7 @@ $(document).ready(function() {
     let myPizza = new Pizza(inputTopping, inputSize);
     myPizza.calculatePizzaCost();
 
-    $("#output").text(myPizza.price);
+    $("#output").text("$" + myPizza.price);
   })
 })
 
