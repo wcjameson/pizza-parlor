@@ -10,3 +10,8 @@ Test: "It should return a price for large size cheese pizza"
 Code: let myPizza = new Pizza("cheese", "large");
 myPizza.calculatePizzaCost();
 Expected Output: 12
+
+Test: "It should return a price for a large size olive or artichoke pizza"
+Code: let myPizza = new Pizza("olive", "large");
+myPizza.calculatePizzaCost();
+Expected Output: 14
