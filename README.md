@@ -26,7 +26,7 @@ This page will tell you how much your pizza costsw depending on the topping and 
 
 ## Known Bugs
 
-* Currently no known bugs.
+* Currently no known bugs.  Contact at williamjameson90@gmail.com
 
 ## Tests
 
